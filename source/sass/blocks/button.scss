@@ -1,0 +1,16 @@
+.button {
+  font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
+  font-weight: $bold;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  background-color: transparent;
+
+  &--white {
+    color: $white;
+    border: 4px solid $white;
+  }
+}

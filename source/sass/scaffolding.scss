@@ -1,0 +1,35 @@
+body {
+  font-family: "RobotoCondensed-Light", "Arial", sans-serif;
+  font-weight: $regular;
+  font-size: 16px;
+  line-height: 150%;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  padding-inline-end: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 105px;
+  position: relative;
+}
+
+
+/////////////////////выделение элементов////////////
+// * {
+//   outline: 1px solid red;
+// }
+
+// *:hover {
+//   background-color: rgba(200, 200, 0, 0.2);
+// }
+////////////////////////////////////////////////////
