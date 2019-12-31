@@ -1,0 +1,43 @@
+.membership {
+  padding: 120px 105px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $light-gray;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -120px;
+    bottom: -100px;
+    width: 321px;
+    height: 384px;
+    background-image: url("../img/membership-bg.png");
+    transform: rotate(-200deg);
+    z-index: 1;
+  }
+}
+
+.membership__header {
+  font-family: "BebasNeue-Bold", "Arial", sans-serif;
+  font-weight: $bold;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: $dark-blue;
+}
+
+.membership__terms {
+  margin: 0;
+}
+
+.membership__types {
+  margin: 0;
+}
+
+// EOF

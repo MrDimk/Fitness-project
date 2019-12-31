@@ -8,64 +8,70 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <header class="site-header container">
-      <div class="site-header__top">
-        <img src="img/Supergym.svg" alt="sypergym" width="89" height="20" class="site-head__logo">
-        <p class="site-header__phone">8-800-555-55-55</p>
-      </div>
-      <div class="site-header__left">
-        <p class="site-header__city">Омск</p>
-        <h1 class="site-header__header">Фитнес<br>центр</h1>
-        <ul class="site-header__services">
-          <li>Тренажёрный зал</li>
-          <li>Групповые занятия</li>
-          <li>Кардио-зона</li>
+    <header class="site-header">
+      <div class="container">
+        <div class="site-header__top">
+          <img src="img/Supergym.svg" alt="sypergym" width="89" height="20" class="site-head__logo">
+          <p class="site-header__phone">8-800-555-55-55</p>
+        </div>
+        <div class="site-header__left">
+          <p class="site-header__city">Омск</p>
+          <h1 class="site-header__header">Фитнес<br>центр</h1>
+          <ul class="site-header__services">
+            <li>Тренажёрный зал</li>
+            <li>Групповые занятия</li>
+            <li>Кардио-зона</li>
+          </ul>
+          <button class="site-header__purchase button button--white">
+            Купить абонемент
+          </button>
+        </div>
+        <img src="/img/superman.png" width="500" height="556" alt="" class="site-header__banner">
+        <ul class="site-header__social social">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--fb" aria-label="Facebook">
+              fb
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--vk" aria-label="Вконтакте">
+              vk
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--ig" aria-label="Instagram">
+              ig
+            </a>
+          </li>
         </ul>
-        <button class="site-header__purchase button button--white">Купить абонемент</button>
       </div>
-      <img src="/img/superman.png" width="500" height="556" alt="" class="site-header__banner">
-      <ul class="site-header__social social">
-        <li class="social__item">
-          <a href="#" class="social__link social__link--fb" aria-label="Facebook">
-            fb
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="#" class="social__link social__link--vk" aria-label="Вконтакте">
-            vk
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="#" class="social__link social__link--ig" aria-label="Instagram">
-            ig
-          </a>
-        </li>
-      </ul>
     </header>
     <main class="main-page">
       <section class="main-page__gym gym container">
-        <h2 class="gym__header">
-          Тренажерный зал
-          <span>Просторный зал площадью 900 кв/м</span>
-        </h2>
-        <p class="gym__text">
-          Supergym – самый большой фитнес центр за Уралом и идеальное место для
-          укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым
-          современным оборудованием для всех спортсменов. В зале расположены
-          отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в
-          фитнес центре есть несколько оборудованных залов для различных видов
-          групповых занятий.
-        </p>
-        <img src="" alt="" class="gym__photo">
+        <div class="gym__left">
+          <h2 class="gym__header">
+            Тренажерный зал
+            <span class="gym__sub-header">Просторный зал площадью 900 кв/м</span>
+          </h2>
+          <p class="gym__text">
+            Supergym – самый большой фитнес центр за Уралом и идеальное место
+            для укрепления тела и здоровья. Тренажерный зал оснащен всем
+            необходимым современным оборудованием для всех спортсменов. В зале
+            расположены отдельная зона для Crossfit и кардио-зона с 40
+            тренажерами. Также в фитнес центре есть несколько оборудованных
+            залов для различных видов групповых занятий.
+          </p>
+        </div>
+        <img src="img/gym.png" alt="Фото спортзала" class="gym__photo">
         <div class="gym__video">
-          <div class="gym__play-video-btn"></div>
+          <button class="gym__play-video-btn">Смотреть видео</button>
         </div>
       </section>
-      <section class="main-page__membersheep membersheep">
-        <h2 class="membersheep__header">Абонементы</h2>
-        <ul class="membersheep__terms terms">
+      <section class="main-page__membership membership">
+        <h2 class="membership__header">Абонементы</h2>
+        <ul class="membership__terms terms">
           <li class="terms__item">
-            <a href="#" class="terms__link" aria-label="Абонемент на 1 месяц">1 месяц</a>
+            <a href="#" class="terms__link terms__link--active" aria-label="Абонемент на 1 месяц">1 месяц</a>
           </li>
           <li class="terms__item">
             <a href="#" class="terms__link" aria-label="Абонемент на 6 месяцев">6 месяцев</a>
@@ -74,30 +80,30 @@
             <a href="#" class="terms__link" aria-label="Абонемент на 12 месяцев">12 месяцев</a>
           </li>
         </ul>
-        <ul class="membersheep__types types">
+        <ul class="membership__types types">
           <li class="types__item">
             <h3 class="types__header">С тренером</h3>
             <p class="types__text">
               12 занятий
-              <span class="types__price">5000</span>
+              <span class="types__price" shadow-value="5000">5000</span>
             </p>
-            <button class="types__purchase-btn">купить абонемент</button>
+            <button class="types__purchase-btn button">купить абонемент</button>
           </li>
-          <li class="types__item">
+          <li class="types__item types__item--active">
             <h3 class="types__header">Дневной</h3>
             <p class="types__text">
               с 8:00 до 17:00
-              <span class="types__price">1700</span>
+              <span class="types__price" shadow-value="1700">1700</span>
             </p>
-            <button class="types__purchase-btn">купить абонемент</button>
+            <button class="types__purchase-btn button">купить абонемент</button>
           </li>
           <li class="types__item">
             <h3 class="types__header">Полный день</h3>
             <p class="types__text">
               с 8:00 до 22:00
-              <span class="types__price">2700</span>
+              <span class="types__price" shadow-value="2700">2700</span>
             </p>
-            <button class="types__purchase-btn">купить абонемент</button>
+            <button class="types__purchase-btn button">купить абонемент</button>
           </li>
         </ul>
       </section>
@@ -114,61 +120,68 @@
               <span class="advert__time-head">Время</span>
               <span class="advert__time-value">12:00</span>
             </p>
-            <p class="advert__text">Ежегодные соревнования по CrossFit</p>
-            <button class="advert__request-btn">заполнить заявку</button>
           </div>
+          <p class="advert__text">Ежегодные соревнования по CrossFit</p>
+          <button class="advert__request-btn button button--white">
+            заполнить заявку
+          </button>
         </div>
         <img src="img/advert.png" alt="Банер соревнований по CrossFit" class="advert__image">
       </section>
       <section class="main-page__coaches coaches">
         <h2 class="coaches__header">Тренеры</h2>
         <ul class="coaches__list">
-          <li class="coaches__item coach">
-            <h3 class="coach__name">Анна Павлова</h3>
-            <span class="coach__type">Pilates</span>
-            <ul class="coach__qualities">
+          <li class="coaches__item">
+            <h3 class="coaches__name">Анна Павлова</h3>
+            <span class="coaches__type">Pilates</span>
+            <ul class="coaches__qualities">
               <li>Спортсменка</li>
               <li>Красавица</li>
               <li>Опыт - 3 года</li>
             </ul>
-            <img src="img/тренер1.png" alt="" class="coach__photo">
+            <img src="img/тренер1.png" alt="" class="coaches__photo">
           </li>
-          <li class="coaches__item coach">
-            <h3 class="coach__name">Алексей Лавров</h3>
-            <span class="coach__type">Тайский бокс</span>
-            <ul class="coach__qualities">
+          <li class="coaches__item">
+            <h3 class="coaches__name">Алексей Лавров</h3>
+            <span class="coaches__type">Тайский бокс</span>
+            <ul class="coaches__qualities">
               <li>Чемпион России</li>
               <li>Тренер высшей категории</li>
               <li>Опыт - 5 лет</li>
             </ul>
-            <img src="img/тренер2.png" alt="" class="coach__photo">
+            <img src="img/тренер2.png" alt="" class="coaches__photo">
           </li>
-          <li class="coaches__item coach">
-            <h3 class="coach__name">Александр Пашков</h3>
-            <span class="coach__type">CrossFit</span>
-            <ul class="coach__qualities">
+          <li class="coaches__item">
+            <h3 class="coaches__name">Александр Пашков</h3>
+            <span class="coaches__type">CrossFit</span>
+            <ul class="coaches__qualities">
               <li>Certified Level 3 Trainer</li>
               <li>Победитель чемпионата России по CrossFit</li>
               <li>Опыт — 6 лет</li>
             </ul>
-            <img src="img/тренер3.png" alt="" class="coach__photo">
+            <img src="img/тренер3.png" alt="" class="coaches__photo">
           </li>
-          <li class="coaches__item coach">
-            <h3 class="coach__name">Мария Кетова</h3>
-            <span class="coach__type">Функциональный тренинг, стретчинг, калланетик</span>
-            <ul class="coach__qualities">
+          <li class="coaches__item">
+            <h3 class="coaches__name">Мария Кетова</h3>
+            <span class="coaches__type">
+              Функциональный тренинг
+            </span>
+            <ul class="coaches__qualities">
               <li>Certified Level 3 Trainer</li>
               <li>
-                Финалистка кубка северо-запада и Санкт-Петербурга 2015 в
-                номинации «фитнес бикини»
+                Финалистка кубка «фитнес бикини» 2015
               </li>
               <li>Опыт - 4 года</li>
             </ul>
-            <img src="img/тренер4.png" alt="" class="coach__photo">
+            <img src="img/тренер4.png" alt="" class="coaches__photo">
           </li>
         </ul>
-        <button class="coaches__prev-controll-btn">Назад</button>
-        <button class="coaches__prev-controll-btn">Дальше</button>
+        <button class="coaches__controll-btn coaches__controll-btn--prev">
+          Назад
+        </button>
+        <button class="coaches__controll-btn coaches__controll-btn--next">
+          Дальше
+        </button>
       </section>
       <section class="main-page__advantages advantages">
         <h2 class="advantages__header">Наши преимущества</h2>

@@ -1,0 +1,79 @@
+.advert {
+  padding: 120px  0 0 0;
+  display: flex;
+}
+
+.advert__description {
+  margin: 0;
+  padding: 87px 80px;
+  background-color: $bg-purple;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.advert__header {
+  @include bebas-b(90px, 90px, $white);
+  margin: 0;
+  padding: 0;
+}
+
+.advert__image {
+  margin: 0;
+  padding: 0;
+  width: 660px;
+  height: 500px;
+}
+
+.advert__date-time {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 95px;
+}
+
+.advert__date, .advert__time {
+  margin: 0 0 30px 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advert__date-head, .advert__time-head {
+  width: 100%;
+  @include roboto-r(18px, 100%, $white);
+  margin: 0;
+  padding: 0 0 5px 0;
+}
+
+.advert__date-day, .advert__time-value {
+  @include roboto-b(40px, 100%, $white);
+  margin: 0;
+  padding: 5px 0 0 0;
+  border-top: 1px solid $white;
+}
+
+.advert__date-month-year {
+  @include roboto-r(14px, 150%, $white);
+  margin: 0;
+  padding: 5px 0 0 7px;
+  border-top: 1px solid $white;
+}
+
+.advert__text {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  @include roboto-r(18px, 150%, $white);
+}
+
+.advert__request-btn {
+  margin-top: auto;
+  width: 100%;
+  height: 57px;
+  align-self: flex-end;
+}
+//EOF

@@ -1,0 +1,116 @@
+.coaches {
+  padding: 0;
+  position: relative;
+}
+
+.coaches__header {
+  @include bebas-b(49px, 49px, $dark-blue);
+  margin: 0 0 62px 0;
+  padding: 0;
+}
+
+.coaches__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  min-width: 1160px;
+  list-style: none;
+}
+
+.coaches__item {
+  margin: 0;
+  padding: 0;
+  width: 260px;
+  height: 294px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:hover {
+    & .coaches__name {
+      margin-top: 50px;
+    }
+
+    & .coaches__type {
+      display: block;
+    }
+    & .coaches__type, .coaches__qualities {
+      display: block;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: $filter-dark;
+      z-index: -1;
+    }
+  }
+}
+
+.coaches__photo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.coaches__name {
+  @include roboto-b(18px, 150%, $white);
+  margin: 250px 0 0 0;
+  padding: 0;
+}
+
+.coaches__qualities {
+  display: none;
+  @include roboto-r(14px, 150%, $white);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 45px 0 55px;
+  width: 260px;
+
+  & li {
+    margin: 24px 0 0 0;
+    padding: 0 0 0 10px;
+  }
+}
+
+.coaches__type {
+  display: none;
+  @include roboto-r(16px, 150%, #B6BDCC);
+  margin: 0;
+  padding: 0 45px 0 55px;
+}
+
+.coaches__controll-btn {
+  font-size: 0;
+  background-color: transparent;
+  width: 22px;
+  height: 22px;
+  border: none;
+  border-left: 1px solid #afafaf;
+  border-bottom: 1px solid #afafaf;
+  position: absolute;
+  top: 250px;
+
+  &--prev {
+    transform: rotate(45deg);
+    left: -56px;
+  }
+  &--next {
+    transform: rotate(225deg);
+    right: -56px;
+  }
+}
+
+
+//EOF

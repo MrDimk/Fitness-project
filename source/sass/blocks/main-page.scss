@@ -1,0 +1,30 @@
+.main-page {
+  margin: 0;
+  padding: 0 105px;
+  box-sizing: border-box;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-page__gym {
+  max-width: 1160px;
+}
+
+.main-page__membership {
+  margin: 0;
+  width: 100%;
+}
+
+.main-page__advert {
+  max-width: 1160px;
+  margin: 0;
+}
+
+.main-page__coaches {
+  margin: 120px 0;
+}
+
+// EOF

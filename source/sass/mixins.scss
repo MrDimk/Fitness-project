@@ -1,0 +1,39 @@
+@mixin roboto-b($size, $height, $color) {
+  font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
+  font-weight: $bold;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+}
+
+@mixin roboto-r($size, $height, $color) {
+  font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
+  font-weight: $regular;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+}
+
+@mixin roboto-l($size, $height, $color) {
+  font-family: "RobotoCondensed-Light", "Arial", sans-serif;
+  font-weight: $light;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+}
+
+@mixin bebas-b($size, $height, $color) {
+  font-family: "BebasNeue-Bold", "Arial", sans-serif;
+  font-weight: $bold;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+}
+
+@mixin bebas-r($size, $height, $color) {
+  font-family: "BebasNeue-Regular", "Arial", sans-serif;
+  font-weight: $regular;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+}
