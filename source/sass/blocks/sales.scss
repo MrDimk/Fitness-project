@@ -1,0 +1,134 @@
+.sales {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.sales__header {
+  margin: 0 0 60px 0;
+  padding: 0;
+  width: 100%;
+  @include bebas-b(49px, 49px, $dark-blue);
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.sales__left {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 560px;
+}
+
+.sales__left-description {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 45px;
+  background-color: $bg-purple;
+}
+
+.sales__left-perid {
+  margin: 0;
+  padding: 0;
+  @include roboto-b(28px, 156%, $white);
+}
+
+.sales__left-price {
+  margin: 0 0 35px 0;
+  padding: 0;
+  @include roboto-b(70px, 100%, $white);
+}
+
+.sales__left-text {
+  margin: 0;
+  padding: 0;
+  @include roboto-r(18px, 140%, $white);
+}
+
+.sales__left-link {
+  margin: auto auto 0 0;
+  padding: 0 0 2px 0;
+  @include roboto-r(14px, 16px, $white);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid $white;
+}
+
+.sales__left-image {
+  margin: 0;
+  padding: 0;
+  width: 280px;
+}
+
+.sales__other {
+  margin: 0;
+  padding: 0;
+  width: 560px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sales__other-item {
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 0 40px 0;
+  padding: 35px;
+  min-height: 211px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: linear-gradient(
+    to right bottom,
+    $text-gradient-1 5%,
+    $text-gradient-2 100%
+  );
+  z-index: -2;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    border: 7px solid transparent;
+    width: calc(100% - 14px);
+    height: calc(100% - 14px);
+    left: 7px;
+    top: 7px;
+    background-color: $white;
+    z-index: -1;
+  }
+}
+
+.sales__other-header {
+  margin: 0;
+  padding: 0;
+  @include roboto-b(28px, 150%, $dark-blue);
+}
+
+.sales__other-text {
+  margin: 0;
+  padding: 0;
+  @include roboto-r(16px, 140%, $dark-blue);
+}
+
+.sales__other-link {
+  margin: auto auto 0 0 ;
+  padding: 0 0 2px 0;
+  @include roboto-b(12px, 14px, $dark-blue);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px solid $dark-blue;
+}
+
+//EOF

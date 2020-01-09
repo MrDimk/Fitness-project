@@ -1,0 +1,65 @@
+.contacts {
+  box-sizing: border-box;
+  padding: 70px 160px 70px 120px;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #74819c;
+}
+
+.contacts__header {
+  box-sizing: border-box;
+  margin: 0 0 60px 0;
+  padding: 0;
+  width: 100%;
+  @include bebas-b(49px, 49px, $dark-blue);
+  letter-spacing: 0.03em;
+}
+
+.contacts__left {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 60px 0 0;
+  width: 230px;
+  background-repeat: 1px solid #74819c;
+}
+
+.contacts__right {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 0 0 60px;
+  width: 230px;
+}
+
+.contacts__address,
+.contacts__schedule,
+.contacts__phone,
+.contacts__email {
+  margin: 0;
+  padding: 0;
+}
+
+.cantacts__address-title,
+.cantacts__schedule-title,
+.cantacts__phone-title,
+.cantacts__email-title {
+  display: block;
+  margin: 0 0 15px 0;
+  padding: 0;
+  width: 100%;
+
+  @include roboto-b(16px, 150%, $dark-blue);
+}
+
+.cantacts__address-value,
+.cantacts__schedule-value,
+.cantacts__phone-value,
+.cantacts__email-value {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  @include roboto-r(13px, 150%, $dark-blue);
+}
+
+// EOF

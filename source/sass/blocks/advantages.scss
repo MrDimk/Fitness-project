@@ -1,0 +1,129 @@
+.advantages {
+  padding: 120px 105px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  background-color: $light-gray;
+}
+
+.advantages__header {
+  margin: 0 0 80px 0;
+  padding: 0;
+  @include bebas-b(49px, 49px, $dark-blue);
+  width: 100%;
+  text-align: center;
+}
+
+.advantages__side {
+  margin: 0;
+  padding: 0;
+  width: 340px;
+  min-height: 307px;
+}
+
+.advantages__item {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+
+  &:nth-child(1) {
+    padding-bottom: 65px;
+    border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+  }
+
+  &:nth-child(2) {
+    padding-top: 65px;
+  }
+}
+
+.advantages__item-value {
+  box-sizing: border-box;
+  margin: 0 30px 0 0;
+  padding: 0;
+
+  &--center {
+    margin: 0;
+  }
+}
+
+.advantages__item-number {
+  @include roboto-b(71px, 80%, $text-units);
+  display: block;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    to right bottom,
+    $text-gradient-1 15%,
+    $text-gradient-2 50%
+  );
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  &--center {
+    margin: 0 0 25px 0;
+    background: none;
+    color: $white;
+    text-align: center;
+    -webkit-text-fill-color: $white;
+  }
+}
+
+.advantages__item-unit {
+  @include roboto-r(14px, 100%, $text-units);
+  margin: 0;
+  padding: 0;
+
+  &--center {
+    display: block;
+    margin: 0 0 50px 0;
+    padding: 0;
+    font-size: 26px;
+    color: $white;
+  }
+}
+
+.advantages__item-about {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  &--center {
+    margin: 0;
+    padding: 0 35px;
+    text-align: center;
+    @include roboto-r(16px, 150%, $white);
+  }
+}
+
+.advantages__item-header {
+  margin: 0 0 20px 0;
+  padding: 0;
+  @include roboto-b(20px, 150%, $dark-blue);
+  display: block;
+}
+
+.advantages__item-text {
+  margin: 0;
+  padding: 0;
+  @include roboto-l(14px, 140%, $dark-blue);
+}
+
+.advantages__center {
+  margin: 0 60px;
+  padding: 0;
+  width: 240px;
+  min-height: 307px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $bg-blue;
+  color: $white;
+}
+
+//EOF

@@ -1,0 +1,13 @@
+.site-footer {
+  background-color: $bg-footer;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 44px 103px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-footer__menu {
+  margin: 0;
+}
