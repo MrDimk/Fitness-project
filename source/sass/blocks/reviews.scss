@@ -48,6 +48,8 @@
 .reviews__item-content {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  max-width: 330px;
 }
 
 .reviews__item-author {
@@ -60,7 +62,7 @@
 .reviews__item-text {
   margin: 0;
   padding: 0;
-  @include roboto-r(14px, 140%, $white);
+  @include roboto-r(16px, 140%, $white);
   letter-spacing: 0;
 }
 

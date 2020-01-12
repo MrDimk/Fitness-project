@@ -20,54 +20,56 @@
           />
           <p class="site-header__phone">8-800-555-55-55</p>
         </div>
-        <div class="site-header__left">
-          <p class="site-header__city">Омск</p>
-          <h1 class="site-header__header">Фитнес<br />центр</h1>
-          <ul class="site-header__services">
-            <li>Тренажёрный зал</li>
-            <li>Групповые занятия</li>
-            <li>Кардио-зона</li>
+        <div class="site-header__middle">
+          <div class="site-header__left">
+            <p class="site-header__city">Омск</p>
+            <h1 class="site-header__header">Фитнес<br />центр</h1>
+            <ul class="site-header__services">
+              <li>Тренажёрный зал</li>
+              <li>Групповые занятия</li>
+              <li>Кардио-зона</li>
+            </ul>
+            <button class="site-header__purchase button button--white">
+              Купить абонемент
+            </button>
+          </div>
+          <img
+            src="/img/superman.png"
+            width="500"
+            height="556"
+            alt=""
+            class="site-header__banner"
+          />
+          <ul class="site-header__social social">
+            <li class="social__item">
+              <a
+                href="#"
+                class="social__link social__link--fb"
+                aria-label="Facebook"
+              >
+                fb
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                href="#"
+                class="social__link social__link--vk"
+                aria-label="Вконтакте"
+              >
+                vk
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                href="#"
+                class="social__link social__link--ig"
+                aria-label="Instagram"
+              >
+                ig
+              </a>
+            </li>
           </ul>
-          <button class="site-header__purchase button button--white">
-            Купить абонемент
-          </button>
         </div>
-        <img
-          src="/img/superman.png"
-          width="500"
-          height="556"
-          alt=""
-          class="site-header__banner"
-        />
-        <ul class="site-header__social social">
-          <li class="social__item">
-            <a
-              href="#"
-              class="social__link social__link--fb"
-              aria-label="Facebook"
-            >
-              fb
-            </a>
-          </li>
-          <li class="social__item">
-            <a
-              href="#"
-              class="social__link social__link--vk"
-              aria-label="Вконтакте"
-            >
-              vk
-            </a>
-          </li>
-          <li class="social__item">
-            <a
-              href="#"
-              class="social__link social__link--ig"
-              aria-label="Instagram"
-            >
-              ig
-            </a>
-          </li>
-        </ul>
       </div>
     </header>
     <main class="main-page">
@@ -75,10 +77,10 @@
         <div class="gym__left">
           <h2 class="gym__header">
             Тренажерный зал
-            <span class="gym__sub-header"
-              >Просторный зал площадью 900 кв/м</span
-            >
           </h2>
+          <span class="gym__sub-header">
+            Просторный зал площадью 900 кв/м
+          </span>
           <p class="gym__text">
             Supergym – самый большой фитнес центр за Уралом и идеальное место
             для укрепления тела и здоровья. Тренажерный зал оснащен всем
@@ -88,7 +90,7 @@
             залов для различных видов групповых занятий.
           </p>
         </div>
-        <img src="img/gym.png" alt="Фото спортзала" class="gym__photo" />
+        <img src="img/gym.png" width="660" alt="Фото спортзала" class="gym__photo" />
         <div class="gym__video">
           <button class="gym__play-video-btn">Смотреть видео</button>
         </div>
@@ -402,7 +404,9 @@
                 />
               </li>
             </ul>
-            <button class="free-training__callback-form-submit-btn button button--white">
+            <button
+              class="free-training__callback-form-submit-btn button button--white"
+            >
               Отправить
             </button>
           </form>
@@ -460,7 +464,7 @@
         </li>
       </ul>
       <ul class="site-footer__social foot-social">
-        <li class="social__item">
+        <li class="foot-social__item">
           <a
             href="#"
             class="foot-social__link foot-social__link--vk"
@@ -469,7 +473,7 @@
             <img src="img/vk.svg" />
           </a>
         </li>
-        <li class="social__item">
+        <li class="foot-social__item">
           <a
             href="#"
             class="foot-social__link foot-social__link--instagram"
@@ -478,7 +482,7 @@
             <img src="img/insta.svg" />
           </a>
         </li>
-        <li class="social__item">
+        <li class="foot-social__item">
           <a
             href="#"
             class="foot-social__link foot-social__link--fb"

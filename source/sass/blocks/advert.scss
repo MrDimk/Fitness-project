@@ -6,6 +6,8 @@
 .advert__description {
   margin: 0;
   padding: 87px 80px;
+  box-sizing: border-box;
+  max-width: 500px;
   background-color: $bg-purple;
 
   display: flex;
